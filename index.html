@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multilevel drop down with scroll for ltr and rtl both</title>
+  <script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="nav-wrap" class="mx-auto mt-3 nav-wrap">
+      <ul class="header-menu-nav md:text-black mx-1 md:mx-1 custom-border">
+        <li class="first-dropdown-li">
+            <a class="first-list mb-2 text-base custom-bottom-border" href="">parent menu label 1</a>
+              <ul class="text-sm bg-white first-dropdown menu box-shadow-dropdown">
+                <li class="whitespace-normal border-b break-all">
+                  <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                    <div class="hover:bg-slate-400">
+                        <a class="w-48" href="">
+                          <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                            <span class="text-sm cursor-pointer w-36">
+                                submenu label 1
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.870679 3.60997e-07L-3.93887e-07 0.948839L3.25864 4.5L2.27018e-07 8.05116L0.87068 9L5 4.5L0.870679 3.60997e-07Z" fill="currentColor"/>
+                                </svg>
+                            </span>
+                          </div>
+                        </a>
+                    </div>
+                  </button>
+                    <ul class="text-sm font-medium child-dropdown box-shadow-dropdown">
+                      <li class="whitespace-normal bg-white border-b break-all">
+                        <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                            <div class="hover:bg-slate-400">
+                                <a class="w-48" href="">
+                                  <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                                    <span class="text-sm cursor-pointer w-36">
+                                    subChildMenu label 1
+                                    </span>
+                                    <span>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.870679 3.60997e-07L-3.93887e-07 0.948839L3.25864 4.5L2.27018e-07 8.05116L0.87068 9L5 4.5L0.870679 3.60997e-07Z" fill="currentColor"/>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                            </div>
+                        </button>
+                        <ul class="text-sm font-medium child-dropdown box-shadow-dropdown">
+                            <li class="whitespace-normal bg-white border-b break-all">
+                              <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                                <div class="hover:bg-slate-400">
+                                    <a class="w-48" href="javaScript:void(0);">
+                                      <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                                        <span class="text-sm cursor-pointer w-36">
+                                            Food
+                                        </span>
+                                      </div>
+                                    </a>
+                                </div>
+                              </button>
+                            </li>
+                        </ul>
+                      </li>
+                    </ul>
+                </li>
+                <li class="whitespace-normal border-b break-all">
+                  <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                    <div class="hover:bg-slate-400">
+                        <a class="w-48" href="">
+                          <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                            <span class="text-sm cursor-pointer w-36">
+                                submenu label 2
+                            </span>
+                          </div>
+                        </a>
+                    </div>
+                  </button>
+                </li>
+                <li class="whitespace-normal border-b break-all">
+                  <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                    <div class="hover:bg-slate-400">
+                        <a class="w-48" href="">
+                          <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                            <span class="text-sm cursor-pointer w-36">
+                                submenu label 3
+                            </span>
+                          </div>
+                        </a>
+                    </div>
+                  </button>
+                </li>
+                <li class="whitespace-normal border-b break-all">
+                  <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                    <div class="hover:bg-slate-400">
+                        <a class="w-48" href="">
+                          <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                            <span class="text-sm cursor-pointer w-36">
+                                submenu label 4
+                            </span>
+                          </div>
+                        </a>
+                    </div>
+                  </button>
+                </li>
+            </ul>
+        </li>
+        <li class="first-dropdown-li">
+          <a class="first-list mb-2 text-base custom-bottom-border" href="">parent menu label 2</a>
+          <ul class="text-sm bg-white first-dropdown menu box-shadow-dropdown">
+            <li class="whitespace-normal border-b break-all">
+              <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                <div class="hover:bg-slate-400">
+                    <a class="w-48" href="">
+                      <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                        <span class="text-sm cursor-pointer w-36">
+                            submenu label 1
+                        </span>
+                      </div>
+                    </a>
+                </div>
+              </button>
+            </li>
+            <li class="whitespace-normal border-b break-all">
+              <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                <div class="hover:bg-slate-400">
+                    <a class="w-48" href="">
+                      <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                        <span class="text-sm cursor-pointer w-36">
+                            submenu label 2
+                        </span>
+                      </div>
+                    </a>
+                </div>
+              </button>
+            </li>
+            <li class="whitespace-normal border-b break-all">
+              <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                <div class="hover:bg-slate-400">
+                    <a class="w-48" href="">
+                      <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                        <span class="text-sm cursor-pointer w-36">
+                            submenu label 3
+                        </span>
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.870679 3.60997e-07L-3.93887e-07 0.948839L3.25864 4.5L2.27018e-07 8.05116L0.87068 9L5 4.5L0.870679 3.60997e-07Z" fill="currentColor"/>
+                          </svg>
+                        </span>
+                      </div>
+                    </a>
+                </div>
+              </button>
+              <ul class="text-sm font-medium child-dropdown box-shadow-dropdown">
+                <li class="whitespace-normal bg-white border-b break-all">
+                  <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                      <div class="hover:bg-slate-400">
+                          <a class="w-48" href="">
+                            <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                              <span class="text-sm cursor-pointer w-36">
+                              subChildMenu label 1
+                              </span>
+                              <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.870679 3.60997e-07L-3.93887e-07 0.948839L3.25864 4.5L2.27018e-07 8.05116L0.87068 9L5 4.5L0.870679 3.60997e-07Z" fill="currentColor"/>
+                                </svg>
+                              </span>
+                            </div>
+                          </a>
+                      </div>
+                  </button>
+                  <ul class="text-sm font-medium child-dropdown box-shadow-dropdown">
+                      <li class="whitespace-normal bg-white border-b break-all">
+                        <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                          <div class="hover:bg-slate-400">
+                              <a class="w-48" href="javaScript:void(0);">
+                                <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                                  <span class="text-sm cursor-pointer w-36">
+                                      Food
+                                  </span>
+                                </div>
+                              </a>
+                          </div>
+                        </button>
+                      </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="whitespace-normal border-b break-all">
+              <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                <div class="hover:bg-slate-400">
+                    <a class="w-48" href="">
+                      <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                        <span class="text-sm cursor-pointer w-36">
+                            submenu label 4
+                        </span>
+                      </div>
+                    </a>
+                </div>
+              </button>
+            </li>
+        </ul>
+      </li>
+      <li class="first-dropdown-li">
+        <a class="first-list mb-2 text-base custom-bottom-border" href="">parent menu label 3</a>
+        <ul class="text-sm bg-white first-dropdown menu box-shadow-dropdown">
+          <li class="whitespace-normal border-b break-all">
+            <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+              <div class="hover:bg-slate-400">
+                  <a class="w-48" href="">
+                    <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                      <span class="text-sm cursor-pointer w-36">
+                          submenu label 1
+                      </span>
+                      <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.870679 3.60997e-07L-3.93887e-07 0.948839L3.25864 4.5L2.27018e-07 8.05116L0.87068 9L5 4.5L0.870679 3.60997e-07Z" fill="currentColor"/>
+                          </svg>
+                      </span>
+                    </div>
+                  </a>
+              </div>
+            </button>
+              <ul class="text-sm font-medium child-dropdown box-shadow-dropdown">
+                <li class="whitespace-normal bg-white border-b break-all">
+                  <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                      <div class="hover:bg-slate-400">
+                          <a class="w-48" href="">
+                            <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                              <span class="text-sm cursor-pointer w-36">
+                              subChildMenu label 1
+                              </span>
+                            </div>
+                          </a>
+                      </div>
+                  </button>
+            
+                </li>
+              </ul>
+          </li>
+          <li class="whitespace-normal border-b break-all">
+            <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+              <div class="hover:bg-slate-400">
+                  <a class="w-48" href="">
+                    <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                      <span class="text-sm cursor-pointer w-36">
+                          submenu label 2
+                      </span>
+                    </div>
+                  </a>
+              </div>
+            </button>
+          </li>
+          <li class="whitespace-normal border-b break-all">
+            <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+              <div class="hover:bg-slate-400">
+                  <a class="w-48" href="">
+                    <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                      <span class="text-sm cursor-pointer w-36">
+                          submenu label 3
+                      </span>
+                    </div>
+                  </a>
+              </div>
+            </button>
+          </li>
+          <li class="whitespace-normal border-b break-all">
+            <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+              <div class="hover:bg-slate-400">
+                  <a class="w-48" href="">
+                    <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                      <span class="text-sm cursor-pointer w-36">
+                          submenu label 4
+                      </span>
+                    </div>
+                  </a>
+              </div>
+            </button>
+          </li>
+      </ul>
+    </li>
+    <li class="first-dropdown-li">
+      <a class="first-list mb-2 text-base custom-bottom-border" href="">parent menu label 4</a>
+        <ul class="text-sm bg-white first-dropdown menu box-shadow-dropdown">
+          <li class="whitespace-normal border-b break-all">
+            <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+              <div class="hover:bg-slate-400">
+                  <a class="w-48" href="">
+                    <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                      <span class="text-sm cursor-pointer w-36">
+                          submenu label 1
+                      </span>
+                      <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.870679 3.60997e-07L-3.93887e-07 0.948839L3.25864 4.5L2.27018e-07 8.05116L0.87068 9L5 4.5L0.870679 3.60997e-07Z" fill="currentColor"/>
+                          </svg>
+                      </span>
+                    </div>
+                  </a>
+              </div>
+            </button>
+              <ul class="text-sm font-medium child-dropdown box-shadow-dropdown">
+                <li class="whitespace-normal bg-white border-b break-all">
+                  <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                      <div class="hover:bg-slate-400">
+                          <a class="w-48" href="">
+                            <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                              <span class="text-sm cursor-pointer w-36">
+                              subChildMenu label 1
+                              </span>
+                            </div>
+                          </a>
+                      </div>
+                  </button>
+                </li>
+              </ul>
+          </li>
+          <li class="whitespace-normal border-b break-all">
+            <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+              <div class="hover:bg-slate-400">
+                  <a class="w-48" href="">
+                    <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                      <span class="text-sm cursor-pointer w-36">
+                          submenu label 2
+                      </span>
+                    </div>
+                  </a>
+              </div>
+            </button>
+          </li>
+          <li class="whitespace-normal border-b break-all">
+            <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+              <div class="hover:bg-slate-400">
+                  <a class="w-48" href="">
+                    <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                      <span class="text-sm cursor-pointer w-36">
+                          submenu label 3
+                      </span>
+                    </div>
+                  </a>
+              </div>
+            </button>
+          </li>
+        
+      </ul>
+  </li>
+  <li class="first-dropdown-li">
+    <a class="first-list mb-2 text-base custom-bottom-border" href="">parent menu label 5</a>
+      <ul class="text-sm bg-white first-dropdown menu box-shadow-dropdown">
+        <li class="whitespace-normal border-b break-all">
+          <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+            <div class="hover:bg-slate-400">
+                <a class="w-48" href="">
+                  <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                    <span class="text-sm cursor-pointer w-36">
+                        submenu label 1
+                    </span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.870679 3.60997e-07L-3.93887e-07 0.948839L3.25864 4.5L2.27018e-07 8.05116L0.87068 9L5 4.5L0.870679 3.60997e-07Z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                  </div>
+                </a>
+            </div>
+          </button>
+            <ul class="text-sm font-medium child-dropdown box-shadow-dropdown">
+              <li class="whitespace-normal border-b break-all">
+                <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                  <div class="hover:bg-slate-400">
+                      <a class="w-48" href="">
+                        <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                          <span class="text-sm cursor-pointer w-36">
+                            subChildMenu label 1
+                          </span>
+                        </div>
+                      </a>
+                  </div>
+                </button>
+              </li>
+              <li class="whitespace-normal bg-white border-b break-all">
+                <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                    <div class="hover:bg-slate-400">
+                        <a class="w-48" href="">
+                          <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                            <span class="text-sm cursor-pointer w-36">
+                            subChildMenu label 2
+                            </span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.870679 3.60997e-07L-3.93887e-07 0.948839L3.25864 4.5L2.27018e-07 8.05116L0.87068 9L5 4.5L0.870679 3.60997e-07Z" fill="currentColor"/>
+                              </svg>
+                            </span>
+                          </div>
+                        </a>
+                    </div>
+                </button>
+                <ul class="text-sm font-medium child-dropdown box-shadow-dropdown">
+                    <li class="whitespace-normal bg-white border-b break-all">
+                      <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                        <div class="hover:bg-slate-400">
+                            <a class="w-48" href="javaScript:void(0);">
+                              <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                                <span class="text-sm cursor-pointer w-36">
+                                    Food
+                                </span>
+                              </div>
+                            </a>
+                        </div>
+                      </button>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+        </li>
+        <li class="whitespace-normal border-b break-all">
+          <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+            <div class="hover:bg-slate-400">
+                <a class="w-48" href="">
+                  <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                    <span class="text-sm cursor-pointer w-36">
+                        submenu label 3
+                    </span>
+                  </div>
+                </a>
+            </div>
+          </button>
+        </li>
+        <li class="whitespace-normal border-b break-all">
+          <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+            <div class="hover:bg-slate-400">
+                <a class="w-48" href="">
+                  <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                    <span class="text-sm cursor-pointer w-36">
+                        submenu label 4
+                    </span>
+                  </div>
+                </a>
+            </div>
+          </button>
+        </li>
+    </ul>
+</li>
+<li class="first-dropdown-li">
+  <a class="first-list mb-2 text-base custom-bottom-border" href="">parent menu label 6</a>
+    <ul class="text-sm bg-white first-dropdown menu box-shadow-dropdown">
+      <li class="whitespace-normal border-b break-all">
+        <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+          <div class="hover:bg-slate-400">
+              <a class="w-48" href="">
+                <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                  <span class="text-sm cursor-pointer w-36">
+                      submenu label 1
+                  </span>
+                  <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.870679 3.60997e-07L-3.93887e-07 0.948839L3.25864 4.5L2.27018e-07 8.05116L0.87068 9L5 4.5L0.870679 3.60997e-07Z" fill="currentColor"/>
+                      </svg>
+                  </span>
+                </div>
+              </a>
+          </div>
+        </button>
+          <ul class="text-sm font-medium child-dropdown box-shadow-dropdown">
+            <li class="whitespace-normal bg-white border-b break-all">
+              <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+                  <div class="hover:bg-slate-400">
+                      <a class="w-48" href="">
+                        <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                          <span class="text-sm cursor-pointer w-36">
+                          subChildMenu label 1
+                          </span>
+                        </div>
+                      </a>
+                  </div>
+              </button>
+              
+            </li>
+          </ul>
+      </li>
+      <li class="whitespace-normal border-b break-all">
+        <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+          <div class="hover:bg-slate-400">
+              <a class="w-48" href="">
+                <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                  <span class="text-sm cursor-pointer w-36">
+                      submenu label 2
+                  </span>
+                </div>
+              </a>
+          </div>
+        </button>
+      </li>
+      <li class="whitespace-normal border-b break-all">
+        <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+          <div class="hover:bg-slate-400">
+              <a class="w-48" href="">
+                <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                  <span class="text-sm cursor-pointer w-36">
+                      submenu label 3
+                  </span>
+                </div>
+              </a>
+          </div>
+        </button>
+      </li>
+      
+  </ul>
+</li>
+<li class="first-dropdown-li">
+  <a class="first-list mb-2 text-base custom-bottom-border" href="">parent menu label 7</a>
+    <ul class="text-sm bg-white first-dropdown menu box-shadow-dropdown">
+      <li class="whitespace-normal border-b break-all">
+        <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+          <div class="hover:bg-slate-400">
+              <a class="w-48" href="">
+                <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                  <span class="text-sm cursor-pointer w-36">
+                      submenu label 1
+                  </span>
+                </div>
+              </a>
+          </div>
+        </button>
+       
+      </li>
+      <li class="whitespace-normal border-b break-all">
+        <button class="outline-none focus:outline-none first-dropdown-menu w-full">
+          <div class="hover:bg-slate-400">
+              <a class="w-48" href="">
+                <div class="flex items-center justify-between w-full menuss-hover px-4 py-4">
+                  <span class="text-sm cursor-pointer w-36">
+                      submenu label 2
+                  </span>
+                </div>
+              </a>
+          </div>
+        </button>
+      </li>
+  </ul>
+</li>
+      </ul>
+    </div>
+<!-- partial -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous"  referrerpolicy="no-referrer"></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+:root {
+  --primary-color: #94a3b8;
+}
+.nav-wrap {
+  overflow-y: auto;
+  white-space: normal;
+  width: 500px;
+}
+.header-menu-nav {
+  display: flex;
+}
+.header-menu-nav li {
+  display: block;
+  text-align: left;
+}
+.header-menu-nav li > a {
+  position: relative;
+}
+.header-menu-nav li:hover,
+.header-menu-nav > li > a:hover,
+.header-menu-nav li:focus,
+.header-menu-nav > li > a:focus {
+  z-index: 5;
+}
+.header-menu-nav li li {
+  display: block;
+}
+.first-list {
+  display: block;
+  margin: 7px 10px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.first-dropdown-menu {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 200px;
+  text-align: left;
+}
+.box-shadow-dropdown {
+  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #dfdfdf;
+}
+.first-dropdown {
+  position: absolute;
+  z-index: 1;
+  left: -999em;
+  transition: all 0.2s ease-in-out;
+  top: 0;
+  opacity: 0;
+  margin-left: -5px;
+}
+.first-dropdown-li:hover > .first-dropdown {
+  left: auto;
+  top: auto;
+  opacity: 1;
+}
+.child-dropdown {
+  display: none;
+  position: absolute;
+  top: -1px;
+  float: left;
+  padding: 0;
+  margin-left: 100%;
+}
+.first-dropdown li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+.header-menu-nav ul li:hover > ul {
+  display: inherit;
+}
+.header-menu-nav li a:first-child:not(:last-child) {
+  margin-right: 20px;
+}
+.header-menu-nav ul.dropdown {
+  left: -999em;
+  opacity: 0;
+}
+.nav-wrap {
+  --scrollbarBG: #f3f3f3;
+}
+.nav-wrap::-webkit-scrollbar {
+  height: 4px;
+}
+.nav-wrap {
+  scrollbar-width: thin;
+}
+
+.nav-wrap::-webkit-scrollbar-thumb {
+  background-color: #dfdfdf;
+  border-radius: 6px;
+}
+
+.menuss-hover:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color) !important;
+  color: #2c2c2c !important;
+  margin-left: 7px;
+  transition: all 120ms ease-in-out;
+}
+.header-menu-nav li ul li,
+.header-menu-nav li ul li ul li .header-menu-nav li ul li ul li ul li {
+  color: #898989;
+}
+.header-menu-nav li ul li:hover,
+.header-menu-nav li ul li ul li:hover
+.header-menu-nav li ul li ul li ul li:hover {
+  color: #2c2c2c;
+  background: var(--primary-color);
+  transition: ease-in-out 0.35s;
+  -moz-transition: ease-in-out 0.35s;
+  -webkit-transition: ease-in-out 0.35s;
+}
+.custom-border li:not(:last-child) .first-list:after {
+  content: " ";
+  position: relative;
+  border-left: 1px #dfdfdf solid;
+  top: 0;
+  right: -18px;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.custom-border {
+  white-space: nowrap;
+}
+.custom-border li a {
+  display: inline-block;
+}
+.custom-bottom-border {
+  position: relative;
+}
+.custom-bottom-border:before,
+.custom-bottom-border:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  background: var(--primary-color);
+}
+
+.custom-bottom-border:before {
+  left: 0;
+}
+.custom-bottom-border:after {
+  right: 0;
+  background: var(--primary-color);
+}
+.custom-bottom-border:hover:before {
+  background: var(--primary-color);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.custom-bottom-border:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+
+/* rtl (change the direction to rtl in the html head in the index file */
+html[dir="rtl"] .first-dropdown-li:hover > .first-dropdown {
+  right: auto;
+  left: unset;
+}
+html[dir="rtl"] .child-dropdown {
+  float: right;
+  margin-right: 100%;
+  margin-left: unset;
+}
+html[dir="rtl"] .first-dropdown {
+  right: -999em;
+  left: unset;
+  transition: all 0.2s ease-in-out;
+  margin-right: -5px;
+  margin-left: unset;
+}
+html[dir="rtl"] .first-dropdown-menu {
+  text-align: right;
+}
+html[dir="rtl"] .first-dropdown-menu svg{
+  transform: scaleX(-1);
+}
+html[dir="rtl"] .header-menu-nav li {
+  text-align: right;
+}
+html[dir="rtl"] .header-menu-nav li a:first-child:not(:last-child) {
+  margin-left: 20px;
+  margin-right: 7px;
+}
+html[dir="rtl"] .header-menu-nav ul.dropdown {
+  right: -999em;
+  left: unset;
+}
+html[dir="rtl"] .menuss-hover:hover {
+  margin-right: 7px;
+  transition: all 120ms ease-in-out;
+  margin-left: unset;
+}
+html[dir="rtl"] .custom-border li:not(:last-child) .first-list:after {
+  border-right: 1px #dfdfdf solid;
+  left: -18px;
+  right: unset;
+}
+html[dir="rtl"] .custom-bottom-border:before {
+  left: unset;
+  right: 0;
+}
+html[dir="rtl"].custom-bottom-border:after {
+  left: 0;
+  right: unset;
+}
