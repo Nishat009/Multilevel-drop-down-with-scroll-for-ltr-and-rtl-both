@@ -1,12 +1,4 @@
-tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          clifford: '#da373d',
-        }
-      }
-    }
-  }
+tailwind.config = { }
 
  
 const scroller = document.querySelector(".nav-wrap");
